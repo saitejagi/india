@@ -1,0 +1,6 @@
+FROM ngnix:alpine
+
+COPY default.conf /etc/ngnix/conf.d/
+COPY index.html /user/share/ngnix/html/
+RUN apk add g++
+

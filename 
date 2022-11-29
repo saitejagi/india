@@ -1,0 +1,19 @@
+[0;1;32m●[0m jenkins.service - Jenkins Continuous Integration Server
+     Loaded: loaded (/lib/systemd/system/jenkins.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Wed 2022-09-14 05:00:40 UTC; 7min ago
+   Main PID: 459 (java)
+      Tasks: 36 (limit: 1143)
+     Memory: 316.2M
+     CGroup: /system.slice/jenkins.service
+             └─459 /usr/bin/java -Djava.awt.headless=true -jar /usr/share/java/jenkins.war --webroot=/var/cache/jenkins/war --httpPort=8080
+
+Sep 14 05:00:06 ip-172-31-46-46 jenkins[459]: This may also be found at: /var/lib/jenkins/secrets/initialAdminPassword
+Sep 14 05:00:06 ip-172-31-46-46 jenkins[459]: *************************************************************
+Sep 14 05:00:06 ip-172-31-46-46 jenkins[459]: *************************************************************
+Sep 14 05:00:06 ip-172-31-46-46 jenkins[459]: *************************************************************
+Sep 14 05:00:40 ip-172-31-46-46 jenkins[459]: 2022-09-14 05:00:40.245+0000 [id=28]        INFO        jenkins.InitReactorRunner$1#onAttained: Completed initialization
+Sep 14 05:00:40 ip-172-31-46-46 jenkins[459]: 2022-09-14 05:00:40.269+0000 [id=22]        INFO        hudson.lifecycle.Lifecycle#onReady: Jenkins is fully up and running
+Sep 14 05:00:40 ip-172-31-46-46 systemd[1]: Started Jenkins Continuous Integration Server.
+Sep 14 05:00:41 ip-172-31-46-46 jenkins[459]: 2022-09-14 05:00:41.157+0000 [id=44]        INFO        h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+Sep 14 05:00:41 ip-172-31-46-46 jenkins[459]: 2022-09-14 05:00:41.158+0000 [id=44]        INFO        hudson.util.Retrier#start: Performed the action check updates server successfully at the attempt #1
+Sep 14 05:00:41 ip-172-31-46-46 jenkins[459]: 2022-09-14 05:00:41.162+0000 [id=44]        INFO        hudson.model.AsyncPeriodicWork#lambda$doRun$1: Finished Download metadata. 35,616 ms
